@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <title>Galeri Mobil Impian</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            transition: background-color 0.3s, color 0.3s;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body.dark-mode {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+        
+        .dark-mode a {
+            color: #7fdbff;
+        }
+        
+        .dark-mode button {
+            background-color: #444;
+            color: #f0f0f0;
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .btn-outline-primary {
+            transition: all 0.3s ease;
+            border-radius: 25px;
+            padding: 10px 20px;
+        }
+        .btn-outline-primary:hover {
+            background-color: #0056b3;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .gallery-image {
+            height: 300px;
+            object-fit: cover;
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover .gallery-image {
+            transform: scale(1.1);
+        }
+
+        .masonry-grid {
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+
+        .page-title {
+            background: linear-gradient(45deg, #007bff, #00bcd4);
+            color: white;
+            padding: 40px 0;
+            margin-bottom: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .nav-link {
+            font-size: 18px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #007bff !important;
+        }
+
+        #darkModeToggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            padding: 10px;
+            border-radius: 50%;
+            border: none;
+            background-color: #04090f;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #darkModeToggle:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0,123,255,0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mobil Impian</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index1.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galery.html">Gallery</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Cari mobil impian..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Cari</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="page-title">
+        <h2 class="text-center mb-0 display-3 fw-bold">Galeri Mobil Impian</h2>
+        <p class="text-center mt-3 lead">Temukan inspirasi untuk mobil impian Anda</p>
+    </div>
+    <div class="container py-5">
+        <div class="masonry-grid">
+            <div class="card shadow-lg">
+                <img src="img/Toyota Supra _ Poster Design.jpg" alt="Toyota Supra" class="gallery-image">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Toyota Supra</h5>
+                    <p class="card-text">Ikon kecepatan dan gaya yang tak tertandingi.</p>
+                    <a href="#" class="btn btn-outline-primary">Lihat Detail <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+            <div class="card shadow-lg">
+                <img src="img/Car Price List Brochure Design.jpg" alt="Daftar Harga" class="gallery-image">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Daftar Harga Eksklusif</h5>
+                    <p class="card-text">Temukan penawaran terbaik untuk mobil impian Anda.</p>
+                    <a href="#" class="btn btn-outline-primary">Lihat Harga <i class="fas fa-tag ml-2"></i></a>
+                </div>
+            </div>
+            <div class="card shadow-lg">
+                <img src="img/TOYOTA 86 - LEGEND RETURNS.jpg" alt="Toyota 86" class="gallery-image">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Toyota 86</h5>
+                    <p class="card-text">Legenda yang kembali dengan performa luar biasa.</p>
+                    <a href="#" class="btn btn-outline-primary">Jelajahi <i class="fas fa-car ml-2"></i></a>
+                </div>
+            </div>
+            <div class="card shadow-lg">
+                <img src="img/c (3).jpg" alt="Mobil Sport" class="gallery-image">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Mobil Sport Terbaru</h5>
+                    <p class="card-text">Rasakan sensasi berkendara yang tak terlupakan.</p>
+                    <a href="#" class="btn btn-outline-primary">Pelajari Lebih Lanjut <i class="fas fa-info-circle ml-2"></i></a>
+                </div>
+            </div>
+            <div class="card shadow-lg">
+                <img src="img/a.jpg" alt="Mobil A" class="gallery-image">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Mobil A</h5>
+                    <p class="card-text">Desain elegan dengan performa tinggi.</p>
+                    <a href="#" class="btn btn-outline-primary">Lihat Detail <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+            <div class="card shadow-lg">
+                <img src="img/b.jpg" alt="Mobil B" class="gallery-image">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Mobil B</h5>
+                    <p class="card-text">Kenyamanan berkendara yang luar biasa.</p>
+                    <a href="#" class="btn btn-outline-primary">Lihat Detail <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+            <div class="card shadow-lg">
+                <img src="img/c (4).jpg" alt="Mobil C" class="gallery-image">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Mobil C</h5>
+                    <p class="card-text">Teknologi canggih untuk pengalaman berkendara terbaik.</p>
+                    <a href="#" class="btn btn-outline-primary">Lihat Detail <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+            <div class="card shadow-lg">
+                <img src="img/diambukanberartilimbad_jpeg.jpg" alt="Mobil D" class="gallery-image">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Mobil D</h5>
+                    <p class="card-text">Efisiensi bahan bakar yang luar biasa.</p>
+                    <a href="#" class="btn btn-outline-primary">Lihat Detail <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+            <div class="card shadow-lg">
+                <img src="img/ford_mustang_mach_e.jpg" alt="Ford Mustang Mach-E" class="gallery-image">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Ford Mustang Mach-E</h5>
+                    <p class="card-text">Mobil listrik dengan performa tinggi dan gaya ikonik Mustang.</p>
+                    <a href="#" class="btn btn-outline-primary">Lihat Detail <i class="fas fa-bolt ml-2"></i></a>
+                </div>
+            </div>
+            <div class="card shadow-lg">
+                <img src="img/lucid_air.jpg" alt="Lucid Air" class="gallery-image">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Lucid Air</h5>
+                    <p class="card-text">Sedan listrik mewah dengan jangkauan dan teknologi terdepan.</p>
+                    <a href="#" class="btn btn-outline-primary">Jelajahi <i class="fas fa-car ml-2"></i></a>
+                </div>
+            </div>
+            <div class="card shadow-lg">
+                <img src="img/porsche_taycan.jpg" alt="Porsche Taycan" class="gallery-image">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Porsche Taycan</h5>
+                    <p class="card-text">Mobil sport listrik dengan performa luar biasa dari Porsche.</p>
+                    <a href="#" class="btn btn-outline-primary">Lihat Spesifikasi <i class="fas fa-cogs ml-2"></i></a>
+                </div>
+            </div>
+            <div class="card shadow-lg">
+                <img src="img/tesla_model_s.jpg" alt="Tesla Model S" class="gallery-image">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Tesla Model S</h5>
+                    <p class="card-text">Sedan listrik dengan teknologi otonomos terdepan.</p>
+                    <a href="#" class="btn btn-outline-primary">Pelajari Lebih Lanjut <i class="fas fa-info-circle ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+        }
+
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            document.getElementById('darkModeToggle').innerHTML = '<i class="fas fa-sun"></i>';
+        }
+
+        document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+    </script>
+</body>
+</html>

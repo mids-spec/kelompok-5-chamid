@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Tentang Kami</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: rgba(0,0,0,0.8);
+            padding: 10px 0;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .nav-link {
+            font-size: 18px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #007bff !important;
+        }
+        .navbar-scrolled {
+            background-color: rgba(0, 0, 0, 1) !important;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        .feature {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mobil Impian</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index1.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galery.html">Galeri</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Cari</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container py-5 mt-5">
+            <h1 class="text-center mb-5">Tentang Mobil Impian</h1>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                    <img src="img/438851451_952666419479867_2365566489315955868_n_2.jpg" alt="Tentang Kami" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2>Visi Kami</h2>
+                    <p>Menjadi penyedia solusi mobilitas terdepan dengan menawarkan pengalaman berkendara yang luar biasa dan inovatif.</p>
+                    <h2>Misi Kami</h2>
+                    <p>Kami berkomitmen untuk:</p>
+                    <ul>
+                        <li>Menyediakan mobil berkualitas tinggi dengan teknologi terkini</li>
+                        <li>Memberikan layanan pelanggan yang unggul</li>
+                        <li>Mendukung keberlanjutan lingkungan melalui inovasi ramah lingkungan</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="text-center mb-4">Tim Kami</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/Aku yang harum.jpg" class="card-img-top" alt="Anggota Tim 1">
+                        <div class="card-body">
+                            <h5 class="card-title">John Doe</h5>
+                            <p class="card-text">CEO & Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/16211a152fd4da258170ec5fdc620ccb.jpg" class="card-img-top" alt="Anggota Tim 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Jane Smith</h5>
+                            <p class="card-text">Chief Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/diambukanberartilimbad_jpeg.jpg" class="card-img-top" alt="Anggota Tim 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Mike Johnson</h5>
+                            <p class="card-text">Head of Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Mobil Impian</h5>
+                    <p>Mewujudkan impian Anda dalam berkendara.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Hubungi Kami</h5>
+                    <p>Email: info@mobilimpian.com</p>
+                    <p>Telepon: (021) 1234-5678</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
